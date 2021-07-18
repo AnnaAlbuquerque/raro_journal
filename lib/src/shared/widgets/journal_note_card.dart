@@ -3,7 +3,16 @@ import 'package:raro_journal/src/shared/constants/app_colors.dart';
 import 'package:raro_journal/src/shared/constants/app_text_styles.dart';
 
 class JournalNoteCard extends StatelessWidget {
-  const JournalNoteCard({Key? key}) : super(key: key);
+  const JournalNoteCard(
+      {Key? key,
+      required this.title,
+      required this.bodyText,
+      required this.data})
+      : super(key: key);
+
+  final String title;
+  final String bodyText;
+  final String data;
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +54,7 @@ class JournalNoteCard extends StatelessWidget {
               child: Padding(
                 padding: const EdgeInsets.fromLTRB(8, 10, 13, 10),
                 child: Text(
-                  "Title text",
+                  title,
                   style: AppTextStyles.roboto16W700,
                 ),
               ),
@@ -64,7 +73,7 @@ class JournalNoteCard extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 child: Text(
-                  "Title text",
+                  bodyText,
                   style: AppTextStyles.roboto14W400,
                 ),
               ),
@@ -75,7 +84,7 @@ class JournalNoteCard extends StatelessWidget {
                 padding:
                     const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
                 child: Text(
-                  "Criado em: ",
+                  "Criado em: $data",
                   style: AppTextStyles.roboto10W300,
                 ),
               ),
