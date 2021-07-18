@@ -3,16 +3,18 @@ import 'package:raro_journal/src/shared/constants/app_colors.dart';
 import 'package:raro_journal/src/shared/constants/app_text_styles.dart';
 
 class JournalNoteCard extends StatelessWidget {
-  const JournalNoteCard(
-      {Key? key,
-      required this.title,
-      required this.bodyText,
-      required this.data})
-      : super(key: key);
+  const JournalNoteCard({
+    Key? key,
+    required this.title,
+    required this.bodyText,
+    required this.data,
+    required this.color,
+  }) : super(key: key);
 
   final String title;
   final String bodyText;
   final String data;
+  final Color color;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +30,7 @@ class JournalNoteCard extends StatelessWidget {
             Container(
               width: double.infinity,
               decoration: BoxDecoration(
-                color: Colors.green,
+                color: color,
                 borderRadius: BorderRadius.circular(4.0),
                 boxShadow: [
                   BoxShadow(
@@ -75,6 +77,8 @@ class JournalNoteCard extends StatelessWidget {
                 child: Text(
                   bodyText,
                   style: AppTextStyles.roboto14W400,
+                  maxLines: 8,
+                  overflow: TextOverflow.ellipsis,
                 ),
               ),
             ),
