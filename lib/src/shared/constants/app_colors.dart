@@ -29,6 +29,14 @@ class AppColors {
     transform: GradientRotation(50 * pi / 180),
   );
 
+  static const LinearGradient cyanToPurpleAddButton = LinearGradient(
+    colors: [cyan, purple],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    stops: [0.0, 0.60],
+    transform: GradientRotation(340 * pi / 180),
+  );
+
   static const LinearGradient whiteToPurple = LinearGradient(
     colors: [white, purpleLowOpacity],
     begin: Alignment.topCenter,
