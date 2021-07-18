@@ -66,8 +66,15 @@ flutter:
           weight: 700
         - asset: assets/fonts/Montserrat-Regular.ttf
           weight: 400
-        # - asset: fonts/Schyler-Italic.ttf
-        #   style: italic
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Roboto-LightItalic.ttf
+          weight: 300
+          style: italic
 
   #
   # For details regarding fonts from package dependencies,
