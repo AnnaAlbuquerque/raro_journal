@@ -1,0 +1,1 @@
+enum colorType { light, dark }

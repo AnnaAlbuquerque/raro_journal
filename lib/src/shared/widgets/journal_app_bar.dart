@@ -3,9 +3,10 @@ import 'package:raro_journal/src/shared/constants/app_colors.dart';
 import 'package:raro_journal/src/shared/constants/app_enums.dart';
 
 class JournalAppBar extends StatelessWidget {
-  final colorType color;
   const JournalAppBar({Key? key, this.color = colorType.light})
       : super(key: key);
+
+  final colorType color;
 
   @override
   Widget build(BuildContext context) {
@@ -13,15 +14,19 @@ class JournalAppBar extends StatelessWidget {
         ? Container(
             color: AppColors.transparent,
             child: Container(
-              child: Image.asset('assets/images/logo.png'),
+              child: Image.asset(
+                'assets/images/logo.png',
+                alignment: Alignment.bottomCenter,
+              ),
             ),
           )
         : Container(
             decoration: BoxDecoration(
-              gradient: AppColors.cyanToPurple,
+              gradient: AppColors.cyanToPurpleAppBar,
             ),
             child: Container(
-              child: Image.asset('assets/images/logo.png'),
+              child: Image.asset('assets/images/logo_white.png'),
+              alignment: Alignment.bottomCenter,
             ),
           );
   }

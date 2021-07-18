@@ -21,6 +21,14 @@ class AppColors {
     transform: GradientRotation(345 * pi / 180),
   );
 
+  static const LinearGradient cyanToPurpleAppBar = LinearGradient(
+    colors: [cyan, purple],
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+    stops: [0.0, 0.55],
+    transform: GradientRotation(50 * pi / 180),
+  );
+
   static const LinearGradient whiteToPurple = LinearGradient(
     colors: [white, purpleLowOpacity],
     begin: Alignment.topCenter,
