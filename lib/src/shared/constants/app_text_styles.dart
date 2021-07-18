@@ -10,6 +10,13 @@ class AppTextStyles {
     letterSpacing: 0.15,
   );
 
+  static const TextStyle roboto16W400 = TextStyle(
+    color: AppColors.black,
+    fontFamily: "Roboto",
+    fontSize: 16,
+    letterSpacing: 0.15,
+  );
+
   static const TextStyle roboto14W400 = TextStyle(
     color: AppColors.black,
     fontFamily: "Roboto",
