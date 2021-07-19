@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:raro_journal/src/modules/home/home_screen.dart';
+import 'package:raro_journal/src/modules/splash/splash_screen.dart';
 import 'package:raro_journal/src/shared/constants/app_colors.dart';
 
 class App extends StatelessWidget {
@@ -18,7 +19,7 @@ class App extends StatelessWidget {
           thickness: MaterialStateProperty.all(7.0),
         ),
       ),
-      home: HomeScreen(),
+      home: SplashScreen(),
     );
   }
 }
