@@ -6,6 +6,8 @@ Project done during Raro Academy course, as the fourth assignment (LevelUP4)
 
 This project consists of a journal, where notes can be added.
 
+<img src="./images/raro_journal.gif" height = "500">
+
 
 ## To Do
 At the moment the application is still under development, so not all functionalities are done.
@@ -13,7 +15,7 @@ At the moment the application is still under development, so not all functionali
 - [ ] Local Database
 - [ ] Creation and deletion of notes
 - [ ] Favorites
-- [ ] Dua date 
+- [ ] Due date 
 - [ ] Attachment
 
 ## Extra Information
