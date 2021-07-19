@@ -56,6 +56,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       itemBuilder: (BuildContext context, int index) =>
                           JournalNoteCard(
                         title: controller.listNotes[index].title,
+                        hasAttchment: controller.listNotes[index].hasAttchment,
+                        hasDate: controller.listNotes[index].hasDate,
+                        isFavorite: controller.listNotes[index].isFavorite,
                         bodyText: controller.listNotes[index].body,
                         data:
                             controller.listNotes[index].creationDate.toString(),

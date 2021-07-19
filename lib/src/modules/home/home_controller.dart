@@ -9,6 +9,9 @@ class HomeController {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum diam sed augue accumsan, nec tincidunt purus interdum. Duis ac porttitor ipsum, ac ultrices metus. Integer mollis nec ligula ut aliquam. Nulla mattis justo vitae elit tincidunt, nec volutpat sapien maximus. Praesent suscipit malesuada fermentum. Nulla consectetur porta nisl, id dapibus odio tempor ac. Vivamus ullamcorper non lacus nec commodo. Curabitur semper nulla in diam molestie, in consectetur tortor interdum.",
       color: AppColors.pink,
       creationDate: DateTime.now(),
+      hasDate: true,
+      hasAttchment: true,
+      isFavorite: true,
     ),
     Note(
       title: "Metting with stakeholders",
@@ -16,6 +19,9 @@ class HomeController {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum diam sed augue accumsan, nec tincidunt purus interdum. Duis ac porttitor ipsum, ac ultrices metus. Integer mollis nec ligula ut aliquam. Nulla mattis justo vitae elit tincidunt, nec volutpat sapien maximus. Praesent suscipit malesuada fermentum. Nulla consectetur porta nisl, id dapibus odio tempor ac. Vivamus ullamcorper non lacus nec commodo. Curabitur semper nulla in diam molestie, in consectetur tortor interdum.",
       color: AppColors.yellow,
       creationDate: DateTime.now(),
+      hasDate: true,
+      hasAttchment: true,
+      isFavorite: false,
     ),
     Note(
       title: "Reminders",
@@ -23,6 +29,9 @@ class HomeController {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum diam sed augue accumsan, nec tincidunt purus interdum. Duis ac porttitor ipsum, ac ultrices metus. Integer mollis nec ligula ut aliquam. Nulla mattis justo vitae elit tincidunt, nec volutpat sapien maximus. Praesent suscipit malesuada fermentum. Nulla consectetur porta nisl, id dapibus odio tempor ac. Vivamus ullamcorper non lacus nec commodo. Curabitur semper nulla in diam molestie, in consectetur tortor interdum.",
       color: AppColors.green,
       creationDate: DateTime.now(),
+      hasDate: true,
+      hasAttchment: false,
+      isFavorite: true,
     ),
     Note(
       title: "Some Ideas",
@@ -30,6 +39,9 @@ class HomeController {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum diam sed augue accumsan, nec tincidunt purus interdum. Duis ac porttitor ipsum, ac ultrices metus. Integer mollis nec ligula ut aliquam. Nulla mattis justo vitae elit tincidunt, nec volutpat sapien maximus. Praesent suscipit malesuada fermentum. Nulla consectetur porta nisl, id dapibus odio tempor ac. Vivamus ullamcorper non lacus nec commodo. Curabitur semper nulla in diam molestie, in consectetur tortor interdum.",
       color: AppColors.purple,
       creationDate: DateTime.now(),
+      hasDate: false,
+      hasAttchment: true,
+      isFavorite: true,
     ),
     Note(
       title: "Meeting university",
@@ -37,6 +49,9 @@ class HomeController {
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin elementum diam sed augue accumsan, nec tincidunt purus interdum. Duis ac porttitor ipsum, ac ultrices metus. Integer mollis nec ligula ut aliquam. Nulla mattis justo vitae elit tincidunt, nec volutpat sapien maximus. Praesent suscipit malesuada fermentum. Nulla consectetur porta nisl, id dapibus odio tempor ac. Vivamus ullamcorper non lacus nec commodo. Curabitur semper nulla in diam molestie, in consectetur tortor interdum.",
       color: AppColors.cyan,
       creationDate: DateTime.now(),
+      hasDate: false,
+      hasAttchment: false,
+      isFavorite: false,
     ),
   ];
 }

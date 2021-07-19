@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:raro_journal/src/shared/constants/app_colors.dart';
 import 'package:raro_journal/src/shared/constants/app_text_styles.dart';
+import 'package:raro_journal/src/shared/widgets/custom_icon.dart';
 
 class JournalNoteCard extends StatelessWidget {
   const JournalNoteCard({
@@ -9,12 +10,18 @@ class JournalNoteCard extends StatelessWidget {
     required this.bodyText,
     required this.data,
     required this.color,
+    required this.hasDate,
+    required this.isFavorite,
+    required this.hasAttchment,
   }) : super(key: key);
 
   final String title;
   final String bodyText;
   final String data;
   final Color color;
+  final bool hasDate;
+  final bool isFavorite;
+  final bool hasAttchment;
 
   @override
   Widget build(BuildContext context) {
@@ -61,19 +68,26 @@ class JournalNoteCard extends StatelessWidget {
                 ),
               ),
             ),
-            Row(
-              children: [
-                Container(
-                  height: 40,
-                  color: Colors.blue,
-                )
-              ],
+            Container(
+              width: double.maxFinite,
+              child: Padding(
+                padding: const EdgeInsets.only(right: 9.0, top: 10),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  children: [
+                    hasDate ? CustomIcon(icon: Icons.date_range) : Container(),
+                    hasAttchment
+                        ? CustomIcon(icon: Icons.attach_file)
+                        : Container(),
+                    isFavorite ? CustomIcon(icon: Icons.favorite) : Container(),
+                  ],
+                ),
+              ),
             ),
             Container(
               width: double.infinity,
               child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 8, vertical: 10),
+                padding: const EdgeInsets.all(8.0),
                 child: Text(
                   bodyText,
                   style: AppTextStyles.roboto14W400,
